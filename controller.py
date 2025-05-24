@@ -2,11 +2,11 @@ import requests
 import os
 import platform
 
-# 🛑 IMPORTANT: Replace with your actual Replit server URL
+
 REPLIT_URL = ""
 
 def clear():
-    # Clear terminal based on OS
+    
     if platform.system() == "Windows":
         os.system("cls")
     else:
@@ -43,7 +43,7 @@ def main():
         }
 
         if choice == "5":
-            send_command("exit")  # Send stop command to player
+            send_command("exit")  
             print("\n👋 Music stopped. Controller exiting...")
             break
         elif choice in song_map:
